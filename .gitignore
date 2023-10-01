@@ -1,0 +1,10 @@
+# next.js build output
+.next/
+.cache/
+
+# Dependency directories
+node_modules/
+
+package-lock.json
+
+.env*
