@@ -13,7 +13,8 @@ export default function Home() {
 
       <main>
         <h1 className="bg-blue-400 text-blue-100 text-2xl font-bold">Draft.js with Next</h1>
-        <Link href="./markdown">こちら</Link>
+        <Link href="./markdown">こちら</Link> <br />
+        <Link href="./comparison">こちら</Link>
       </main>
     </div>
   );
