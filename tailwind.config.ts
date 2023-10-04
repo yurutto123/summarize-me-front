@@ -10,6 +10,7 @@ const config: Config = {
       },
       colors: {
         "main-color": "#000C24",
+        "button-color": "#0038A6",
       },
     },
   },
