@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Icon from "../../public/images/SummarizeMeLogo.png";
+import Icon from "../../../../../public/images/SummarizeMeLogo.png";
 
 export const metadata = {
-  title: "SummarizeMe ログイン",
-  description: "テスト用ページ",
+  title: "SummarizeMe 新規登録",
+  description: "新規登録ページ",
 };
 
 export default function Home() {
