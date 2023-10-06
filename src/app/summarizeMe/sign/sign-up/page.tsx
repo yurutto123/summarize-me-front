@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import Icon from "../../../../../public/images/SummarizeMeLogo.png";
 
 export const metadata = {
-  title: "SummarizeMe ログイン",
-  description: "ログインページ",
+  title: "SummarizeMe 新規登録",
+  description: "新規登録ページ",
 };
 
 export default function Home() {
@@ -22,10 +23,20 @@ export default function Home() {
         <div className="p-10 w-full max-w-2xl mx-3 md:mx-0">
           <h1 className="text-2xl text-sub-color font-bold mb-10 text-center flex justify-center items-center space-x-4">
             <hr className="border-2 border-sub-color w-1/3" />
-            <span className="text-5xl">ログイン</span>
+            <span className="text-4xl">新規登録</span>
             <hr className="border-2 border-sub-color w-1/3" />
           </h1>
           <form>
+            <div className="mb-5">
+              <input
+                type="text"
+                id="userName"
+                className="w-full text-2xl px-3 py-2 border rounded-md"
+                required
+                placeholder="ユーザー名"
+              />
+            </div>
+
             <div className="mb-5">
               <input
                 type="email"
@@ -48,13 +59,16 @@ export default function Home() {
               type="submit"
               className="w-full py-3 bg-sub-color text-4xl text-blue-900 font-bold rounded-md mb-4"
             >
-              ログイン
+              新規登録
             </button>
           </form>
           <div className="flex justify-center w-full">
-            <a href="#" className="text-center text-sub-color border-b-2">
-              新規登録はこちら
-            </a>
+            <Link
+              href="/summarizeMe/sign/sign-in"
+              className="text-center text-sub-color border-b-2"
+            >
+              ログインはこちら
+            </Link>
           </div>
           <hr className="mt-5 border-2 border-sub-color w-full" />
         </div>
