@@ -1,14 +1,14 @@
 import Image from "next/image";
+import React from "react";
 import Icon from "../../../../public/summarizeMe.png";
-import LoginForm from "../../sign/sign-in/form";
+import CreateForm from "./form";
 
-const metadata = {
-  title: "SummarizeMe ログイン",
-  description: "ログインページ",
+export const metadata = {
+  title: "SummarizeMe 新規登録",
+  description: "新規登録ページ",
 };
 
-const Home = () => {
-
+export default function Home() {
   return (
     <main className="flex min-h-screen">
       <div className="w-1/3 bg-main-color flex flex-col items-center justify-center">
@@ -19,13 +19,13 @@ const Home = () => {
         <div className="p-10 w-full max-w-2xl mx-3 md:mx-0">
           <h1 className="text-2xl text-sub-color font-bold mb-10 text-center flex justify-center items-center space-x-4">
             <hr className="border-2 border-sub-color w-1/3" />
-            <span className="text-5xl">ログイン</span>
+            <span className="text-4xl">新規登録</span>
             <hr className="border-2 border-sub-color w-1/3" />
           </h1>
-          <LoginForm />
+          <CreateForm />
           <div className="flex justify-center w-full">
-            <a href="./sign-up" className="text-center text-sub-color border-b-2">
-              新規登録はこちら
+            <a href="./sign-in" className="text-center text-sub-color border-b-2">
+              ログインはこちら
             </a>
           </div>
           <hr className="mt-5 border-2 border-sub-color w-full" />
@@ -33,6 +33,4 @@ const Home = () => {
       </div>
     </main>
   );
-};
-export { metadata };
-export default Home;
+}
