@@ -11,10 +11,10 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex flex-col">
-      <Link className="bg-white" href="./summarizeMe/sign/sign-in/">
+      <Link className="bg-white" href="./summarizeMe/sign/sign-in">
         ログイン
       </Link>
-      <Link className="bg-white" href="./summarizeMe/sign/sign-up/">
+      <Link className="bg-white" href="./summarizeMe/sign/sign-up">
         新規登録
       </Link>
       <Link className="bg-white" href="./summarizeMe/in/vote-list">
@@ -25,6 +25,9 @@ export default function Home() {
       </Link>
       <Link className="bg-white" href="./summarizeMe/in/battle-room">
         バトル部屋
+      </Link>
+      <Link className="bg-white" href="./summarizeMe/in/article-list">
+        記事一覧
       </Link>
     </main>
   );
