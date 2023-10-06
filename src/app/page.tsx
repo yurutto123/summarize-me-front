@@ -17,6 +17,12 @@ export default function Home() {
       <Link className="bg-white" href="./summarizeMe/sign/sign-up/">
         新規登録
       </Link>
+      <Link className="bg-white" href="./summarizeMe/in/vote-list">
+        投票一覧
+      </Link>
+      <Link className="bg-white" href="./summarizeMe/in/room-list/">
+        部屋一覧
+      </Link>
     </main>
   );
 }
