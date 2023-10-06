@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoTitle from "../../../../public/images/logo-title.png";
 import PersonIcon from "../../../../public/images/person-icon.png";
-import Poster from "../../../../public/images/poster.png";
+import Poster from "../../../../public/images/ecc-poster.png";
 import RankingTitle from "../../../../public/images/ranking-title.png";
 import UserIcon1 from "../../../../public/images/user_icon1.png";
 import PickUpTitle from "../../../../public/images/pick-up-title.png";
