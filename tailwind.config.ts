@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         "main-color": "#000C24",
         "button-color": "#0038A6",
+        "grad-start": "#00588A",
+        "grad-via": "#001857",
+        "grad-end": "#000C24",
+        "sub-color": "#F4F4F4",
+        "black": "#000C24",
+        "origin-blue": "#0038A6",
+        "origin-sky-blue": "#8DB3C9",
       },
     },
   },
