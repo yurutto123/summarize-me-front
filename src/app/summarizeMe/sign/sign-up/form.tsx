@@ -40,7 +40,7 @@ const CreateForm = () => {
         const tokenString = JSON.stringify(responseData);
         sessionStorage.setItem("token", tokenString);
         console.log("Response:", responseData);
-        router.push("../../../markdown");
+        router.push("../../../../summarizeMe/in/room_list");
       }
     } catch (error) {
       console.error("Error:", error);

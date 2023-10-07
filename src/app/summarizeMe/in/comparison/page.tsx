@@ -5,11 +5,10 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import Image from "next/image";
-import icon from "../../../public/summarizeMe.png";
-import goodWhite from "../../../public/good_white.png";
-import goodBlack from "../../../public/good_black.png";
+import icon from "../../../../../public/summarizeMe.png";
+import goodWhite from "../../../../../public/good_white.png";
+import goodBlack from "../../../../../public/good_black.png";
 import "./comparison.css";
 
 function TabPanel(props: { [x: string]: any; children: any; value: any; index: any }) {
@@ -33,7 +32,7 @@ function a11yProps(index: number) {
   };
 }
 
-function BasicTabs() {
+export default function BasicTabs() {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
@@ -41,9 +40,8 @@ function BasicTabs() {
   };
 
   return (
-    <div className="flex w-screen h-screen">
-      <div className="bg-blue-700 w-[25%] display: none">左</div>
-      <div className="bg-main-color w-[50%] mx-3">
+    <div className="flex w-full h-full">
+      <div className="bg-white w-full">
         <div className="bg-main-color">
           <Box sx={{ borderBottom: 1, borderColor: "divider", color: "white", fontSize: "10px" }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -52,7 +50,7 @@ function BasicTabs() {
             </Tabs>
           </Box>
         </div>
-        <div className="bg-main-color mt-2 text-white">
+        <div className="bg-main-color text-white">
           {/* TODO:お題 */}
           <h1 className="p-3 text-white">お題：ちいかわ</h1>
           <div className="flex pb-3">
@@ -92,27 +90,11 @@ function BasicTabs() {
           </TabPanel>
         </div>
       </div>
-      <div className="bg-blue-700 w-[25%] display: none;">右</div>
     </div>
   );
 }
 
-function App() {
-  return (
 
-      <Grid container >
-        <Grid item xs={12}>
-          {/* <Typography variant="h2">Sample</Typography> */}
-        </Grid>
-        <Grid item xs={8}>
-          <BasicTabs />
-        </Grid>
-      </Grid>
-
-  );
-}
-
-export default App;
 
 // "use client";
 

@@ -37,10 +37,11 @@ const LoginForm = () => {
         throw new Error("Network response was not ok");
       }else{
         const responseData = await response.json();
-        const tokenString = JSON.stringify(responseData);
+        // const tokenString = responseData["token"].replace(/^"(.*)"$/, "$1");
+        const tokenString = responseData["token"];
         sessionStorage.setItem("token", tokenString);
         console.log("Response:", responseData);
-        router.push("../../../markdown")
+        router.push("../../../../summarizeMe/in/room_list");
       }
     } catch (error) {
       console.error("Error:", error);

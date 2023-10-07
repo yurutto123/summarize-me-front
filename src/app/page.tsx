@@ -1,7 +1,23 @@
+"use client";
 import Head from "next/head";
-import Link from "next/link";
-
-export default function Home() {
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+const Home = () => {
+  const router = useRouter();
+  // 仮のログイン状態を示す変数
+  let isLoggedIn = false;
+  if (sessionStorage.getItem("token")) {
+    console.log(sessionStorage.getItem("token"))
+    isLoggedIn = true;
+  }
+  useEffect(() => {
+    // ログインしていない場合はログインページにリダイレクト
+    if (isLoggedIn) {
+      router.push("./summarizeMe/in/room_list");
+    }else{
+      router.push("./summarizeMe/sign/sign-in");
+    }
+  }, []);
   return (
     <div className="container">
       <Head>
@@ -10,11 +26,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="bg-blue-400 text-blue-100 text-2xl font-bold">Draft.js with Next</h1>
-        <Link href="./markdown">こちら</Link> <br />
-        <Link href="./comparison">こちら</Link>
-      </main>
+      <main></main>
     </div>
   );
-}
+};
+
+export default Home;
