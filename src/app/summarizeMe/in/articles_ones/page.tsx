@@ -49,7 +49,7 @@ function ArticlesList() {
     <div className="flex flex-col w-screen h-screen">
       <div className="bg-main-color text-white">
         {/* TODO:お題 */}
-        <h1 className="p-3 text-white text-2xl">エビデンス</h1>
+        <h1 className="p-3 text-white text-2xl">SDGs</h1>
         <div className="flex pb-3">
           <Image className="ml-5 rounded-full h-5 w-5" src={icon} alt="SummarizeMe" width={20} height={20} style={{ boxShadow: "0 0 10px 0px rgba(255, 255, 255, 0.5)" }} />
           <div className="text-lg flex items-center" style={{ marginLeft: "10px" }}>
