@@ -31,7 +31,7 @@ export default function Page() {
           <div className="bg-sub-color h-full rounded-xl flex flex-col items-center justify-center">
             <div className="flex items-center justify-center">
               <div className="flex text-center justify-center py-1 font-extrabold text-3xl">
-                お題:<span>已己巳己(いこみき)とは？</span>
+                お題:<span>エビデンス</span>
               </div>
               <p className="text-center mx-2">
                 作成時間:<span className="">90</span>分
@@ -41,8 +41,8 @@ export default function Page() {
               <div className="flex flex-col text-lose-color p-2">
                 <div className="flex items-center pb-3">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
-                  <p className="px-2">20like</p>
+                  <p className="">くのり</p>
+                  <p className="px-2">132like</p>
                   <p className="">lose</p>
                 </div>
                 <div className="flex items-center justify-center">
@@ -55,8 +55,8 @@ export default function Page() {
               <div className="flex flex-col text-win-color p-2">
                 <div className="flex items-center pb-3">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
-                  <p className="px-2">33like</p>
+                  <p className="">おざわ</p>
+                  <p className="px-2">329like</p>
                   <p className="">win</p>
                 </div>
                 <div className="flex items-center justify-center">
@@ -72,36 +72,36 @@ export default function Page() {
           <div className="bg-sub-color h-full rounded-xl flex flex-col items-center justify-center">
             <div className="flex items-center justify-center">
               <div className="flex text-center justify-center py-1 font-extrabold text-3xl">
-                お題:<span>已己巳己(いこみき)とは？</span>
+                お題:<span>Google社</span>
               </div>
               <p className="text-center mx-2">
                 作成時間:<span className="">90</span>分
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <div className="flex flex-col text-lose-color p-2">
+              <div className="flex flex-col text-win-color p-2">
                 <div className="flex items-center pb-3">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
-                  <p className="px-2">20like</p>
-                  <p className="">lose</p>
+                  <p className="">金髪</p>
+                  <p className="px-2">123like</p>
+                  <p className="">win</p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <a href="./articles_ones" className="bg-lose-color rounded-lg w-40 text-sub-color text-center">
+                  <a href="./articles_ones" className="bg-win-color rounded-lg w-40 text-sub-color text-center">
                     記事を見る
                   </a>
                 </div>
               </div>
               <p className="font-extrabold mx-2">VS</p>
-              <div className="flex flex-col text-win-color p-2">
+              <div className="flex flex-col text-lose-color p-2">
                 <div className="flex items-center pb-3">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
-                  <p className="px-2">33like</p>
-                  <p className="">win</p>
+                  <p className="">うえさか</p>
+                  <p className="px-2">101like</p>
+                  <p className="">lose</p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <a href="./articles_ones" className="bg-win-color rounded-lg w-40 text-sub-color text-center">
+                  <a href="./articles_ones" className="bg-lose-color rounded-lg w-40 text-sub-color text-center">
                     記事を見る
                   </a>
                 </div>

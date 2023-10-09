@@ -12,11 +12,12 @@ const Home = () => {
   }
   useEffect(() => {
     // ログインしていない場合はログインページにリダイレクト
-    if (isLoggedIn) {
-      router.push("./summarizeMe/in/room_list");
-    }else{
-      router.push("./summarizeMe/sign/sign-in");
-    }
+    // if (isLoggedIn) {
+    //   router.push("./summarizeMe/in/room_list");
+    // }else{
+    //   router.push("./summarizeMe/sign/sign-in");
+    // }
+    router.push("./summarizeMe/sign/sign-in");
   }, []);
   return (
     <div className="container">

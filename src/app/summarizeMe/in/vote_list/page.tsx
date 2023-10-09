@@ -100,7 +100,7 @@ export default function Page() {
             <a href="./comparison">
               <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
                 <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
-                  お題:<span>オンデマンド</span>
+                  お題:<span>エビデンス</span>
                 </div>
                 <div className="flex items-center py-1">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />

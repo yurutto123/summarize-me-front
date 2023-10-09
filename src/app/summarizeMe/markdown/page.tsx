@@ -10,6 +10,7 @@ import PersonIcon from "../../../../public/person-icon.png";
 import "./markdown.css";
 import Timer from "../in/timer/page";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const markdown = () => {
   const send = async () => {
@@ -38,12 +39,12 @@ const markdown = () => {
         } else {
           const responseData = await response.json();
           console.log(responseData);
-          <Link href={"../../"}/>
         }
       }
     } catch (error) {
       console.error("Error during fetch:", error);
     }
+    
   };
 
   const [markdown, setMarkdown] = useState<string | undefined>();
