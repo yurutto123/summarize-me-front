@@ -2,6 +2,11 @@ import Image from "next/image";
 import React from "react";
 import UserIcon1 from "../../../../../public/images/user_icon1.png";
 
+export const metadata = {
+  title: "SummarizeMe 投票リスト",
+  description: "投票リスト閲覧ページ",
+};
+
 export default function Page() {
   return (
     <div className="w-full">
