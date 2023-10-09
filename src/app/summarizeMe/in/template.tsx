@@ -24,7 +24,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         </div>
         <div className="h-2/5 w-full flex items-end">
           <div className="flex items-end ml-2 text-sub-color">
-            <Link href="/summarizeMe/in/room-list">
+            <Link href="/summarizeMe/in/battle-room-list">
               <p className="mx-5 pb-1 px-2 text-lg font-bold h-full border-b-4 border-sub-color">
                 バトルルーム一覧
               </p>
@@ -34,9 +34,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 投票一覧
               </p>
             </Link>
-            <p className="mx-5 pb-1 px-2 text-lg font-bold h-full border-b-4 border-sub-color">
-              記事一覧
-            </p>
+            <Link href="/summarizeMe/in/article-list">
+              <p className="mx-5 pb-1 px-2 text-lg font-bold h-full border-b-4 border-sub-color">
+                記事一覧
+              </p>
+            </Link>
           </div>
         </div>
       </header>
