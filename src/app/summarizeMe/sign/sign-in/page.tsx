@@ -19,7 +19,7 @@ const Home = () => {
         <div className="p-10 w-full max-w-2xl mx-3 md:mx-0">
           <h1 className="text-2xl text-sub-color font-bold mb-10 text-center flex justify-center items-center space-x-4">
             <hr className="border-2 border-sub-color w-1/3" />
-            <span className="text-5xl">ログイン</span>
+            <span className="text-4xl">ログイン</span>
             <hr className="border-2 border-sub-color w-1/3" />
           </h1>
           <LoginForm />
