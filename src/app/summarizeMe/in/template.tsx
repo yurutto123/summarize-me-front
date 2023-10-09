@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoTitle from "../../../../public/images/logo-title.png";
 import PersonIcon from "../../../../public/images/person-icon.png";
-import Poster from "../../../../public/images/poster.png";
+import eccPoster from "../../../../public/images/ecc-poster.png";
 import RankingTitle from "../../../../public/images/ranking-title.png";
 import UserIcon1 from "../../../../public/images/user_icon1.png";
 import PickUpTitle from "../../../../public/images/pick-up-title.png";
@@ -122,7 +122,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         <div className="w-4/6 flex justify-center">{children}</div>
 
         <div className="w-1/6 flex flex-col items-center">
-          <Image src={Poster} alt="" width={250} height={250} />
+          <Image src={eccPoster} alt="" width={250} height={250} />
           <div className="bg-sub-color w-[250px] mt-4 p-2 border-[10px] border-origin-sky-blue rounded-3xl">
             <Image src={PickUpTitle} alt="" className="mb-2" />
             <p>１円玉を作るのには３円かかる。</p>
