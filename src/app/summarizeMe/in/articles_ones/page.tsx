@@ -16,7 +16,7 @@ function ArticlesList() {
     const fetchData = async () => {
       console.log("通過");
       try {
-        const url = "http://localhost:8080/article/view/10";
+        const url = "http://localhost:8080/article/view/5";
         const token = sessionStorage.getItem("token");
         console.log("token", token);
         if (token !== null) {
@@ -41,7 +41,6 @@ function ArticlesList() {
         console.error("Error during fetch:", e);
       }
     };
-
     // fetchData 関数を呼び出す
     fetchData();
   }, []);
@@ -50,7 +49,7 @@ function ArticlesList() {
     <div className="flex flex-col w-screen h-screen">
       <div className="bg-main-color text-white">
         {/* TODO:お題 */}
-        <h1 className="p-3 text-white text-2xl">已己巳己(いこみき)とは？</h1>
+        <h1 className="p-3 text-white text-2xl">オンデマンド</h1>
         <div className="flex pb-3">
           <Image className="ml-5 rounded-full h-5 w-5" src={icon} alt="SummarizeMe" width={20} height={20} style={{ boxShadow: "0 0 10px 0px rgba(255, 255, 255, 0.5)" }} />
           <div className="text-lg flex items-center" style={{ marginLeft: "10px" }}>

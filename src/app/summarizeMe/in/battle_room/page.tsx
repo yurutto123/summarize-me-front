@@ -15,7 +15,7 @@ export default function Page() {
         <div className="flex w-full justify-center items-center pt-6 pb-3">
           <div className="flex justify-center items-center">
             <Image src={UserIcon1} alt="SummarizeMe logo" className="w-16 shadow-sub-color shadow-lg z-10 rounded-full" />
-            <p className="pl-4 text-4xl font-extrabold">参加者名</p>
+            <p className="pl-4 text-4xl font-extrabold">しみず</p>
           </div>
         </div>
         <div className="w-full py-6">
@@ -25,7 +25,7 @@ export default function Page() {
         <div className="flex w-full justify-center items-center -mt-2 pt-3 pb-6">
           <div className="flex justify-center items-center">
             <Image src={UserIcon1} alt="SummarizeMe logo" className="w-16 shadow-sub-color shadow-lg z-10 rounded-full" />
-            <p className="pl-4 text-4xl font-extrabold">????????????</p>
+            <p className="pl-4 text-4xl font-extrabold">ゆるっと</p>
           </div>
         </div>
         <div className="w-full pt-10 pb-2">

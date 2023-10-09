@@ -1,24 +1,25 @@
 "use client";
 
 import MDEditor from "@uiw/react-md-editor";
-import Image from "next/image"
+import Image from "next/image";
 import { useState } from "react";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
-import LogoTitle from "../../../../public/logo-title.png"
-import PersonIcon from "../../../../public/person-icon.png"
+import LogoTitle from "../../../../public/logo-title.png";
+import PersonIcon from "../../../../public/person-icon.png";
 import "./markdown.css";
 import Timer from "../in/timer/page";
+import Link from "next/link";
 
 const markdown = () => {
   const send = async () => {
-console.log("ke", markdown);
+    console.log("ke", markdown);
     try {
       const url = "http://localhost:8080/article/add";
       const token = sessionStorage.getItem("token");
       console.log(token);
       const data = {
-        room_id: 4,
+        room_id: 12,
         body: markdown,
       };
       console.log(data);
@@ -37,6 +38,7 @@ console.log("ke", markdown);
         } else {
           const responseData = await response.json();
           console.log(responseData);
+          <Link href={"../../"}/>
         }
       }
     } catch (error) {
@@ -54,7 +56,7 @@ console.log("ke", markdown);
           <Image className="mr-2" src={PersonIcon} alt="" width={50} height={50} />
         </div>
       </header>
-      
+
       <main>
         <div data-color-mode="light" className="bg-main-color h-[88vh] w-full">
           <div className="h-[5%] text-white flex">
@@ -101,7 +103,7 @@ console.log("ke", markdown);
             //     },
             //   } as React.CSSProperties
             // }
-            
+
             height={"100%"} // 仮
             textareaProps={{
               placeholder: "テキスト",

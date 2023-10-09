@@ -43,7 +43,7 @@ export default function BasicTabs() {
     const fetchData = async () => {
       console.log("通過");
       try {
-        const url = "http://localhost:8080/article/view/10";
+        const url = "http://localhost:8080/article/view/1";
         const token = sessionStorage.getItem("token");
         console.log("token", token);
         if (token !== null) {

@@ -10,11 +10,11 @@ const CreateForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>, setFunction: { (value: SetStateAction<string>): void; (value: SetStateAction<string>): void; (value: SetStateAction<string>): void; (arg0: any): void; }) => {
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>, setFunction: { (value: SetStateAction<string>): void; (value: SetStateAction<string>): void; (value: SetStateAction<string>): void; (arg0: any): void }) => {
     setFunction(event.target.value);
   };
 
-  const create = async (event: { preventDefault: () => void; }) => {
+  const create = async (event: { preventDefault: () => void }) => {
     event.preventDefault(); // フォームのデフォルトの動作を防ぐ
 
     try {
@@ -35,9 +35,10 @@ const CreateForm = () => {
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
-      }else{
+      } else {
         const responseData = await response.json();
-        const tokenString = JSON.stringify(responseData);
+        // const tokenString = JSON.stringify(responseData);
+        const tokenString = responseData["token"];
         sessionStorage.setItem("token", tokenString);
         console.log("Response:", responseData);
         router.push("../../../../summarizeMe/in/room_list");

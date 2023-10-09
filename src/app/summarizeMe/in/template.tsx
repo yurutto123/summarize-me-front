@@ -39,8 +39,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <p className="text-3xl font-bold">1.</p>
                 <Image src={UserIcon1} alt="SummarizeMe logo" className="rounded-full mx-2" width={40} />
                 <div className="font-bold">
-                  <p className="">ルーム製作者名</p>
-                  <p className="text-center">2000p</p>
+                  <p className="">くのり　</p>
+                  <p className="text-center">2023p</p>
                 </div>
               </div>
 
@@ -48,8 +48,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <p className="text-3xl font-bold">2.</p>
                 <Image src={UserIcon1} alt="SummarizeMe logo" className="rounded-full mx-2" width={40} />
                 <div className="font-bold">
-                  <p className="">ルーム製作者名</p>
-                  <p className="text-center">2000p</p>
+                  <p className="">おざわ　</p>
+                  <p className="text-center">1987p</p>
                 </div>
               </div>
 
@@ -57,8 +57,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <p className="text-3xl font-bold">3.</p>
                 <Image src={UserIcon1} alt="SummarizeMe logo" className="rounded-full mx-2" width={40} />
                 <div className="font-bold">
-                  <p className="">ルーム製作者名</p>
-                  <p className="text-center">2000p</p>
+                  <p className="">うえさか</p>
+                  <p className="text-center">1498p</p>
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <p className="text-3xl font-bold">4.</p>
                 <Image src={UserIcon1} alt="SummarizeMe logo" className="rounded-full mx-2" width={40} />
                 <div className="font-bold">
-                  <p className="">ルーム製作者名</p>
-                  <p className="text-center">2000p</p>
+                  <p className="">しみず　</p>
+                  <p className="text-center">1422p</p>
                 </div>
               </div>
 
@@ -75,8 +75,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <p className="text-3xl font-bold">5.</p>
                 <Image src={UserIcon1} alt="SummarizeMe logo" className="rounded-full mx-2" width={40} />
                 <div className="font-bold">
-                  <p className="">ルーム製作者名</p>
-                  <p className="text-center">2000p</p>
+                  <p className="">金髪　</p>
+                  <p className="text-center">12p</p>
                 </div>
               </div>
             </div>

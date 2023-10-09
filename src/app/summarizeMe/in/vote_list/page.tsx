@@ -100,16 +100,16 @@ export default function Page() {
             <a href="./comparison">
               <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
                 <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
-                  お題:<span>已己巳己(いこみき)とは？</span>
+                  お題:<span>オンデマンド</span>
                 </div>
                 <div className="flex items-center py-1">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
+                  <p className="">くのり</p>
                 </div>
                 <p className="font-extrabold mx-2">VS</p>
                 <div className="flex items-center">
                   <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                  <p className="">ルーム製作者名</p>
+                  <p className="">おざわ</p>
                 </div>
                 <p className="text-center mx-2">
                   作成時間:<span className="">90</span>分
@@ -122,16 +122,79 @@ export default function Page() {
           <div className="w-full h-36 p-4">
             <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
               <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
-                お題:<span>已己巳己(いこみき)とは？</span>
+                お題:<span>IoT</span>
               </div>
               <div className="flex items-center py-1">
                 <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                <p className="">ルーム製作者名</p>
+                <p className="">うえさか</p>
               </div>
               <p className="font-extrabold mx-2">VS</p>
               <div className="flex items-center">
                 <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
-                <p className="">ルーム製作者名</p>
+                <p className="">しみず</p>
+              </div>
+              <p className="text-center mx-2">
+                作成時間:<span className="">90</span>分
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full my-1 flex flex-wrap font-bold text-2xl">
+          <div className="w-full h-36 p-4">
+            <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
+              <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
+                お題:<span>SDGs</span>
+              </div>
+              <div className="flex items-center py-1">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">おざわ</p>
+              </div>
+              <p className="font-extrabold mx-2">VS</p>
+              <div className="flex items-center">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">金髪</p>
+              </div>
+              <p className="text-center mx-2">
+                作成時間:<span className="">90</span>分
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full my-1 flex flex-wrap font-bold text-2xl">
+          <div className="w-full h-36 p-4">
+            <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
+              <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
+                お題:<span>円周率</span>
+              </div>
+              <div className="flex items-center py-1">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">うえさか</p>
+              </div>
+              <p className="font-extrabold mx-2">VS</p>
+              <div className="flex items-center">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">くのり</p>
+              </div>
+              <p className="text-center mx-2">
+                作成時間:<span className="">90</span>分
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full my-1 flex flex-wrap font-bold text-2xl">
+          <div className="w-full h-36 p-4">
+            <div className="bg-sub-color h-full rounded-xl flex flex-wrap items-center justify-center">
+              <div className="flex w-full text-center justify-center py-1 font-extrabold text-3xl">
+                お題:<span>ワーケーション</span>
+              </div>
+              <div className="flex items-center py-1">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">おざわ</p>
+              </div>
+              <p className="font-extrabold mx-2">VS</p>
+              <div className="flex items-center">
+                <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                <p className="">しみず</p>
               </div>
               <p className="text-center mx-2">
                 作成時間:<span className="">90</span>分
