@@ -25,7 +25,6 @@ const Home = () => {
         <meta name="description" content="Draft.js with Next" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main></main>
     </div>
   );

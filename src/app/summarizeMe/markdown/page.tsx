@@ -12,32 +12,35 @@ import Timer from "../in/timer/page";
 
 const markdown = () => {
   const send = async () => {
+console.log("ke", markdown);
     try {
-      const url = "http://localhost:8080/login";
+      const url = "http://localhost:8080/article/add";
+      const token = sessionStorage.getItem("token");
+      console.log(token);
       const data = {
-        name: "test1",
-        email: "test1@email.com",
-        password: "test1",
+        room_id: 4,
+        body: markdown,
       };
-
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
+      console.log(data);
+      if (token !== null) {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            Authorization: token,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        console.log(response);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        } else {
+          const responseData = await response.json();
+          console.log(responseData);
+        }
       }
-
-      const responseData = await response.json();
-      // tokenをセッションに保存
-      sessionStorage.setItem("token", String(responseData));
-      console.log("Response:", responseData);
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error during fetch:", error);
     }
   };
 
@@ -98,6 +101,7 @@ const markdown = () => {
             //     },
             //   } as React.CSSProperties
             // }
+            
             height={"100%"} // 仮
             textareaProps={{
               placeholder: "テキスト",

@@ -13,3 +13,16 @@
 .w-md-editor-toolbar  {
   color: white !important;
 }
+
+ol {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.markdown-editor {
+  white-space: pre-wrap;
+}

@@ -1,29 +1,115 @@
-import React from "react";
-
 import Image from "next/image";
-import icon from "../../../public/summarizeMe.png";
+import React from "react";
+import UserIcon1 from "../../../../../public/user_icon1.png";
 
-function articles_list() {
+export default function Page() {
   return (
-    <div className="flex flex-col w-screen h-screen">
-      <div className="bg-main-color text-white">
-        {/* TODO:お題 */}
-        <h1 className="p-3 text-white text-2xl">已己巳己(いこみき)とは？</h1>
-        <div className="flex pb-3">
-          <Image className="ml-5 rounded-full h-5 w-5" src={icon} alt="SummarizeMe" width={20} height={20} style={{ boxShadow: "0 0 10px 0px rgba(255, 255, 255, 0.5)" }} />
-          <div className="text-lg flex items-center" style={{ marginLeft: "10px" }}>
-            {/* TODO:参加者名、good数 */}
-            クリ&thinsp;<span>33</span>&thinsp;like&nbsp;
+    <div className="w-full">
+      <div className="w-full mt-2 mb-5 flex justify-center items-center font-bold text-2xl text-sub-color">
+        <div className="flex items-center mr-4">
+          <p className="text-3xl">作成時間：</p>
+          <select id="times" className="rounded-lg bg-transparent border-4 w-[150px] py-2 text-center">
+            <option className="bg-main-color font-bold" value="all">
+              全て
+            </option>
+            <option className="bg-main-color font-bold" value="15">
+              15分
+            </option>
+            <option className="bg-main-color" value="30">
+              30分
+            </option>
+            <option className="bg-main-color" value="60">
+              60分
+            </option>
+          </select>
+        </div>
+        <button className="bg-sub-color w-[200px] border-4 border-sub-color text-main-color rounded-lg py-2">検索</button>
+      </div>
+
+      <div className="w-full my-1 flex flex-col font-bold text-2xl">
+        <div className="w-full p-4">
+          <div className="bg-sub-color h-full rounded-xl flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center">
+              <div className="flex text-center justify-center py-1 font-extrabold text-3xl">
+                お題:<span>已己巳己(いこみき)とは？</span>
+              </div>
+              <p className="text-center mx-2">
+                作成時間:<span className="">90</span>分
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="flex flex-col text-lose-color p-2">
+                <div className="flex items-center pb-3">
+                  <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                  <p className="">ルーム製作者名</p>
+                  <p className="px-2">20like</p>
+                  <p className="">lose</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <a href="./articles_ones" className="bg-lose-color rounded-lg w-40 text-sub-color text-center">
+                    記事を見る
+                  </a>
+                </div>
+              </div>
+              <p className="font-extrabold mx-2">VS</p>
+              <div className="flex flex-col text-win-color p-2">
+                <div className="flex items-center pb-3">
+                  <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                  <p className="">ルーム製作者名</p>
+                  <p className="px-2">33like</p>
+                  <p className="">win</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <a href="./articles_ones" className="bg-win-color rounded-lg w-40 text-sub-color text-center">
+                    記事を見る
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="text-[5px] flex-1 flex items-center justify-end px-3">
-            {/* TODO:作成時間 */}
-            作成時間<span className="text-[10px]">：</span>90分
+        </div>
+        <div className="w-full p-4">
+          <div className="bg-sub-color h-full rounded-xl flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center">
+              <div className="flex text-center justify-center py-1 font-extrabold text-3xl">
+                お題:<span>已己巳己(いこみき)とは？</span>
+              </div>
+              <p className="text-center mx-2">
+                作成時間:<span className="">90</span>分
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="flex flex-col text-lose-color p-2">
+                <div className="flex items-center pb-3">
+                  <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                  <p className="">ルーム製作者名</p>
+                  <p className="px-2">20like</p>
+                  <p className="">lose</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <a href="./articles_ones" className="bg-lose-color rounded-lg w-40 text-sub-color text-center">
+                    記事を見る
+                  </a>
+                </div>
+              </div>
+              <p className="font-extrabold mx-2">VS</p>
+              <div className="flex flex-col text-win-color p-2">
+                <div className="flex items-center pb-3">
+                  <Image src={UserIcon1} alt="参加者アイコン" className="rounded-full mx-2" width={30} />
+                  <p className="">ルーム製作者名</p>
+                  <p className="px-2">33like</p>
+                  <p className="">win</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <a href="./articles_ones" className="bg-win-color rounded-lg w-40 text-sub-color text-center">
+                    記事を見る
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="bg-white h-full p-5">s</div>
     </div>
   );
 }
-
-export default articles_list;

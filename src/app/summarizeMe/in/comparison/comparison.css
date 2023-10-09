@@ -32,3 +32,24 @@
 p .css-ahj2mt-MuiTypography-root {
   color: black;
 }
+
+ol {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.markdown-editor {
+  white-space: pre-wrap;
+}
+
+.wmde-markdown h1 {
+  color: black !important;
+}
+
+.css-19kzrtu {
+  padding: 0 !important;
+}

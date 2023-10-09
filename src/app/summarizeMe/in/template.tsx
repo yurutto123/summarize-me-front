@@ -23,7 +23,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <Link href="./vote_list">
               <p className="mx-5 pb-1 px-2 text-lg font-bold h-full border-b-4 border-sub-color">投票一覧</p>
             </Link>
-            <Link href="./comparison">
+            <Link href="./articles_list">
               <p className="mx-5 pb-1 px-2 text-lg font-bold h-full border-b-4 border-sub-color">記事一覧</p>
             </Link>
           </div>
